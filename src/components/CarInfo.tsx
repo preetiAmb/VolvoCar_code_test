@@ -37,7 +37,7 @@ const CarInfo: React.FC<CarDataPropsType> = (props) => {
           }}
         >
           <Text variant="amundsen">
-            {modelName}</Text>
+            {modelName}</Text><Spacer/>
             <Text
               subStyle="emphasis"
               extend={{ color: "#808c98" }}
