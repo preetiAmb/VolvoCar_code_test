@@ -70,7 +70,6 @@ const LearnInfo: React.FC = () => {
             <Link href={`/shop/${carId}`} arrow='right'>
               Buy
             </Link>
-            <Spacer size={2} />
           </Flex>
         </Flex>
       </Flex>
