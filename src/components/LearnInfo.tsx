@@ -71,9 +71,6 @@ const LearnInfo: React.FC = () => {
               Buy
             </Link>
             <Spacer size={2} />
-            <Link href={`/electric`} arrow='right'>
-              All cars
-            </Link>
           </Flex>
         </Flex>
       </Flex>
