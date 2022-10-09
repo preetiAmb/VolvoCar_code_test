@@ -2,10 +2,10 @@
 
 ## Front-end coding test (React)
 
-### Desktop
+## Desktop
 
 ![ProductListDesktop](./docs/Volvo-productList-Desktop.png)
 
-### Mobile
+## Mobile
 
 ![ProductListMobile](./docs/Volvo-productList-Mobile.png)
