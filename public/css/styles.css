@@ -6,14 +6,15 @@ body {
 .Home .car-detail {
   text-align: justify;
 }
-button {
+.button {
   border: none;
   background: none;
 }
 .carfilter {
-  width: 50%;
-  padding: 5px;
+  width: 40%;
+  padding: 6px;
   margin: auto;
+  
 }
 @media only screen and (max-width: 600px) {
   .button-nav {

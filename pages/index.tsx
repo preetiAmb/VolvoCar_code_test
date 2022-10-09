@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import { Flex, Icon } from "vcc-ui";
+import { Flex, Icon, Spacer, IconButton } from "vcc-ui";
 import CarInfo from "../src/components/CarInfo";
 import Data from "../public/api/cars.json";
 import { useState, useRef } from "react";
@@ -16,7 +16,7 @@ const Home: React.FC<{ cars: Car }> = (props) => {
 
   useEffect(() => {
     carData;
-  })
+  });
 
   const customSlider = useRef<Slider>(null);
   const settings = {
@@ -50,8 +50,12 @@ const Home: React.FC<{ cars: Car }> = (props) => {
   const filterByBodyType = () => {
     const carTypes = [...new Set(carData.map((car: Car) => car.bodyType))];
     return (
-      <select className="carfilter"  aria-label="car filter" onChange={carTypeSelected}>
-        <option value="All Cars">Choose Any</option>
+      <select
+        className="carfilter"
+        aria-label="car filter"
+        onChange={carTypeSelected}
+      >
+        <option value="All Cars">Choose any</option>
         {carTypes.map((type) => {
           return (
             <option value={type} key={type}>
@@ -94,20 +98,27 @@ const Home: React.FC<{ cars: Car }> = (props) => {
           className="button-nav"
           extend={{
             flexDirection: "row",
-            justifyContent: "flex-end",
-            fontSize: "32px",
+            justifyContent: "end",
+            marginTop: "8px",
+            untilM: {
+              display: "none",
+            },
           }}
         >
-          <button onClick={() => customSlider?.current?.slickPrev()}>
-            {" "}
-            <Icon type="mediacircled-previous-40" />
-          </button>
-
-          <button onClick={() => customSlider?.current?.slickNext()}>
-          {" "}
-            <Icon type="mediacircled-next-40" />
-          </button>
+          <IconButton
+            iconName="navigation-chevronback"
+            variant="outline"
+            onClick={() => customSlider?.current?.slickPrev()}
+          />
+          <Spacer />
+          <IconButton
+            iconName="navigation-chevronforward"
+            variant="outline"
+            onClick={() => customSlider?.current?.slickNext()}
+          />
+          <Spacer size={2} />
         </Flex>
+        <Spacer />
       </main>
     </>
   );
