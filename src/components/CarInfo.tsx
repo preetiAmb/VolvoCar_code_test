@@ -21,26 +21,29 @@ const CarInfo: React.FC<CarDataPropsType> = (props) => {
           paddingTop: "5rem"
         }}
       >
+        <Flex  extend={{
+            flexDirection: "row",
+            margin: "12px",
+          }}>
         <Text variant="bates" subStyle="emphasis" extend={{ color: "#808c98" }}>
           {bodyType.toUpperCase()}
         </Text>
-
+        </Flex>
+       
         <Flex
           extend={{
             flexDirection: "row",
-            alignItems: "start",
+            margin: "12px",
           }}
         >
           <Text variant="amundsen">
-            {modelName} <Spacer />
+            {modelName}</Text>
             <Text
-              className="model-name-type"
               subStyle="emphasis"
               extend={{ color: "#808c98" }}
             >
               {modelType}
             </Text>
-          </Text>
         </Flex>
         <Block
           extend={{

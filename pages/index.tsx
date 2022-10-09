@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import Head from "next/head";
-import { Flex, Icon, Spacer, IconButton } from "vcc-ui";
+import { Flex, Icon, Spacer, IconButton, Block } from "vcc-ui";
 import CarInfo from "../src/components/CarInfo";
 import Data from "../public/api/cars.json";
 import { useState, useRef } from "react";
@@ -94,12 +94,12 @@ const Home: React.FC<{ cars: Car }> = (props) => {
             <CarInfo car={i} key={i.id} />
           ))}
         </Slider>
+        <Block>
         <Flex
-          className="button-nav"
           extend={{
             flexDirection: "row",
-            justifyContent: "end",
-            marginTop: "8px",
+            justifyContent: "flex-end",
+            marginTop: "16px",
             untilM: {
               display: "none",
             },
@@ -118,6 +118,9 @@ const Home: React.FC<{ cars: Car }> = (props) => {
           />
           <Spacer size={2} />
         </Flex>
+
+        </Block>
+       
         <Spacer />
       </main>
     </>
