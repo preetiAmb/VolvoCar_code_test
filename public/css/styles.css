@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  min-height: -webkit-fill-available;
+}
+.Home .car-detail {
+  text-align: justify;
+}
+button {
+  border: none;
+  background: none;
+}
+.carfilter {
+  width: 50%;
+  padding: 5px;
+  margin: auto;
+}
+@media only screen and (max-width: 600px) {
+  .button-nav {
+    display: none !important;
+  }
+  .carfilter {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  .model-name-type {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .button-nav {
+    display: none !important;
+  }
+  .carfilter {
+    width: 40%;
+    margin-bottom: 20px;
+  }
+  .model-name-type {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media only screen and (min-width: 769px) {
+  .button-prev {
+    transform: rotate(180deg);
+    height: 30px;
+  }
+  .button-next {
+    height: 30px;
+  }
+}
