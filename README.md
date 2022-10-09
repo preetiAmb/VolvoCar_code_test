@@ -4,7 +4,7 @@
 
 ## Desktop
 
-![ProductListDesktop](./docs/Volvo-productList-desktop.png)
+![ProductListDesktop](./docs/Volvo-productList-Desktop.png)
 
 ## Mobile
 
