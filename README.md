@@ -8,4 +8,4 @@
 
 ## Mobile
 
-![ProductListMobile](./docs/Volvo-productList-Mobile.png)
+![ProductListMobile](./docs/Volvo-productList-mobile.png)
