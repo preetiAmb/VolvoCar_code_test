@@ -14,10 +14,6 @@ const Home: React.FC<{ cars: Car }> = (props) => {
   const [carData, setCarData] = useState(Data);
   const [filterCarData, setFilterCarData] = useState(Data);
 
-  useEffect(() => {
-    carData;
-  });
-
   const customSlider = useRef<Slider>(null);
   const settings = {
     speed: 300,
