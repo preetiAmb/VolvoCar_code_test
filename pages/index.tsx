@@ -55,7 +55,7 @@ const Home: React.FC<{ cars: Car }> = (props) => {
         aria-label="car filter"
         onChange={carTypeSelected}
       >
-        <option value="All Cars">Choose any</option>
+        <option value="All Cars">All Cars</option>
         {carTypes.map((type) => {
           return (
             <option value={type} key={type}>
