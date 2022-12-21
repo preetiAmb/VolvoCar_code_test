@@ -13,6 +13,13 @@ body {
   margin: auto;
 
 }
+
+button {
+  all: unset;
+  cursor: pointer;
+}
+
+
 @media only screen and (max-width: 600px) {
   .button-nav {
     display: none !important;

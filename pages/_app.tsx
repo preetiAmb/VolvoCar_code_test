@@ -8,9 +8,7 @@ function HomePage({ Component, pageProps }: AppProps) {
     <React.StrictMode>
       <StyleProvider>
         <ThemePicker variant="light">
-        <StyleProvider>
           <Component {...pageProps} />
-        </StyleProvider>
         </ThemePicker>
       </StyleProvider>
     </React.StrictMode>

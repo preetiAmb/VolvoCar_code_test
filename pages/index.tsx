@@ -7,7 +7,7 @@ import { useState, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Car from "../src/components/Types";
+import Car from "../src/Types";
 import Header from "../src/components/Header";
 
 const Home: React.FC<{ cars: Car }> = (props) => {
@@ -95,23 +95,21 @@ const Home: React.FC<{ cars: Car }> = (props) => {
           extend={{
             flexDirection: "row",
             justifyContent: "flex-end",
-            marginTop: "16px",
+            marginTop: "12px",
             untilM: {
               display: "none",
             },
           }}
         >
-          <IconButton
-            iconName="navigation-chevronback"
-            variant="outline"
+          <button
+            className="button-nav"
             onClick={() => customSlider?.current?.slickPrev()}
-          />
+          ><Icon type="mediacircled-previous-40" /></button>
           <Spacer />
-          <IconButton
-            iconName="navigation-chevronforward"
-            variant="outline"
+          <button
+            className="button-nav"
             onClick={() => customSlider?.current?.slickNext()}
-          />
+          ><Icon type="mediacircled-next-40" /></button>
           <Spacer size={2} />
         </Flex>
 
